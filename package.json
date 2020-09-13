@@ -35,7 +35,8 @@
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-syntax-highlight": "0.0.6",
-    "sass-loader": "^7.3.1"
+    "sass-loader": "^7.3.1",
+    "svg-url-loader": "^6.0.0"
   },
   "repository": {
     "type": "git",

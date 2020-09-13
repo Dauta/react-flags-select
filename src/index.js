@@ -148,7 +148,7 @@ class ReactFlagsSelect extends Component {
 					 aria-labelledby="select_flag_button">
 					{isSelected &&
 						<span className="flag-select__option flag-select__option--placeholder">
-							<img className="flag-select__option__icon" src={`../flags/${isSelected.toLowerCase()}.svg`} alt={isSelected}/>
+							<img className="flag-select__option__icon" src={require(`svg-url-loader?encoding=base64!../flags/${isSelected.toLowerCase()}.svg`)} alt={isSelected}/>
 							{this.props.showSelectedLabel &&
 								<span className="flag-select__option__label">{ this.props.customLabels[isSelected] || countries[isSelected] }</span>
 							}
@@ -180,7 +180,7 @@ class ReactFlagsSelect extends Component {
 									<img
 										className="flag-select__option__icon"
 										alt={`flag for ${countries[countryCode]}`}
-										src={`../flags/${countryCode.toLowerCase()}.svg`} />
+										src={require(`svg-url-loader?encoding=base64!../flags/${countryCode.toLowerCase()}.svg`)} />
 									{this.props.showOptionLabel && (
 										<span className="flag-select__option__label">
 										{ this.props.customLabels[countryCode] || countries[countryCode] }
